@@ -64,6 +64,7 @@ const AddNewMethodScreen = ({ navigation }) => {
         nameOfBank,
         accountNumber,
         ifscCode,
+        //test
         showSelectCarTypeSheet,
     } =  state;
 
