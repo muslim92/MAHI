@@ -52,7 +52,7 @@ const SignupScreen = ({ navigation }) => {
                             {mobileNumberTextField()}
                             {passwordTextField()}
                             {confirmPasswordTextField()}
-                            {signupWithOptions()}
+                            {/* {signupWithOptions()} */}
                             {signinText()}
                             {signupButton()}
                         </View>

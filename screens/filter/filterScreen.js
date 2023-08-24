@@ -6,9 +6,9 @@ import SelectDropdown from 'react-native-select-dropdown';
 
 const { width } = Dimensions.get('screen');
 
-const ageFromList = ['18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40',];
+const ageFromList = ['18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60'];
 
-const ageToList = ['18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40',];
+const ageToList = ['18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60'];
 
 const heightFromList = [
     '3 ft 2 in',
@@ -29,11 +29,14 @@ const heightToList = [
 const maritalStatusList = [
     'Single',
     'Divorced',
+    'Widowed',
+    'New Muslim'
 ];
 
 const countryList = [
     'Any',
-    'India',
+    'Pakistan',
+    'UK',
     'USA',
     'Belize',
     'Canada',
@@ -42,17 +45,20 @@ const countryList = [
 
 const stateOrCityList = [
     'Any',
-    'Surat',
-    'Delhi',
-    'Baroda',
-    'Vapi',
+    'England',
+    'Scotland',
+    'Wales',
+    'Northern Ireland',
 ];
 
-const religionList = [
+const religionSectList = [
     'Any',
-    'Hindu',
-    'Christianity',
-    'Islam',
+    'Sunni',
+    'Shia',
+    'Ahle e Hadees', 
+    'Deo Bandi',
+    'Ismaili',
+    'Ahmadi'
 ];
 
 const educationList = [
@@ -63,26 +69,35 @@ const educationList = [
     'MCA',
 ];
 
+
 const professionList = [
-    'Any',
-    'Software Engineer',
-    'CA',
-    'Doctor',
-    'Professor',
+    'Any', 
+    'Software Developer', 
+    'Mechanical Engineer', 
+    'Doctor', 
+    'Nurse', 
+    'Pharmacist',
+    'School Teacher',
+    'Professor'
 ];
 
 const castList = [
     'Any',
-    'Hindu',
-    'Khatri',
+    'Syed',
+    'Rajay',
+    'Arain',
+    'Jutt',
+    'Sheikh',
+    'Khan',
+    'Malik'
 ];
 
 const annualIncomeList = [
-    'Above Rs.2,00,000',
-    'Above Rs.3,00,000',
-    'Above Rs.4,00,000',
-    'Above Rs.5,00,000',
-    'Above Rs.6,00,000',
+    'Below £30,000',
+    'Above £30,000',
+    'Above £50,000',
+    'Above £70,000',
+    'Above £100,000',
 ];
 
 const FilterScreen = ({ navigation }) => {
@@ -133,7 +148,7 @@ const FilterScreen = ({ navigation }) => {
                 {stateOrCityInfo()}
                 {educationInfo()}
                 {professionInfo()}
-                {religionInfo()}
+                {religionSectInfo()}
                 {castInfo()}
                 {annualIncomeInfo()}
             </View>
@@ -292,7 +307,7 @@ const FilterScreen = ({ navigation }) => {
         )
     }
 
-    function religionInfo() {
+    function religionSectInfo() {
         return (
             <View style={{ flexDirection: 'row', marginBottom: Sizes.fixPadding + 5.0, }}>
                 <View style={styles.filterNumberWrapStyle}>
@@ -302,12 +317,12 @@ const FilterScreen = ({ navigation }) => {
                 </View>
                 <View style={{ marginLeft: Sizes.fixPadding }}>
                     <Text style={{ ...Fonts.blackColor15Bold }}>
-                        Religion
+                        Religion Sect
                     </Text>
                     <View style={{ marginTop: Sizes.fixPadding - 5.0, }}>
                         <View style={{ ...styles.dropdownWrapStyle, }}>
                             <SelectDropdown
-                                data={religionList}
+                                data={religionSectList}
                                 defaultButtonText='Any'
                                 buttonTextStyle={{ ...Fonts.blackColor13SemiBold, textAlign: 'left' }}
                                 buttonStyle={styles.fullScreenDropDownFieldStyle}

@@ -35,7 +35,7 @@ const SplashScreen = ({ navigation }) => {
                     backgroundColor: 'rgba(0,0,0,0.7)'
                 }}>
                     <Image
-                        source={require('../assets/images/logo.png')}
+                        source={require('../assets/images/logo4.png')}
                         style={{ width: 120.0, height: 100.0 }}
                         resizeMode="contain"
                     />

@@ -57,7 +57,7 @@ const SigninScreen = ({ navigation }) => {
                             {userNameTextField()}
                             {passwordTextField()}
                             {forgotPasswordText()}
-                            {signinWithOptions()}
+                            {/* {signinWithOptions()} */}
                             {signupText()}
                             {signinButton()}
                         </View>

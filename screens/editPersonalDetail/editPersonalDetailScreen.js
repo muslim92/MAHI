@@ -17,7 +17,7 @@ const heightList = [
 ];
 
 const weightList = [
-    '50 kg', '60 kg', '70 kg', '40 kg', '55 kg',
+    '40 kg','50 kg', '60 kg', '70 kg',
 ];
 
 const ageList = ['18 yrs', '19 yrs', '20 yrs', '21 yrs', '22 yrs', '23 yrs', '24 yrs', '25 yrs', '26 yrs', '27 yrs', '28 yrs', '29 yrs', '30 yrs', '31 yrs', '32 yrs', '33 yrs', '34 yrs', '35 yrs', '36 yrs', '37 yrs', '38 yrs', '39 yrs', '40 yrs',];
@@ -30,19 +30,19 @@ const dateofbirthList = [
 
 const educationList = ['BCA - MCA', 'BCA', 'BBA', 'Bcom', 'CA'];
 
-const religionList = ['Hindu', 'Christianity', 'Islam'];
+const religionSectList = ['Sunni', 'Shia', 'Ahle e Hadees', 'Deo Bandi', 'Ismaili', 'Ahmadi'];
 
-const statusList = ['Single', 'Widower', 'Divorced'];
+const statusList = ['Single','New Muslim', 'Widower', 'Divorced'];
 
 const languageList = [
-    'English, Hindi, Gujarati', 'Hindi, Gujarati', 'Gujarati', 'Hindi', 'English, Hindi',
+    'English, Urdu, Pashto', 'Sindhi', 'Saraiki', 'Balochi',
 ];
 
 const occupationList = [
-    'Software Developer', 'React Developer', 'CA'
+    'Software Developer', 'Mechanical Engineer', 'Doctor', 'Nurse', 'Pharmacist', 'School Teacher', 'Professor', 'Any Other'
 ];
 
-const livesInList = ['Delhi, India', 'Surat, India Canada', 'Baroda, India'];
+const livesInList = ['London, UK', 'Slough, UK', 'Manchester, UK', 'Islamabad, Pakistan', 'Faisalabad, Pakistan', 'Lahore, Pakistan',];
 
 const EditPersonalDetailScreen = ({ navigation }) => {
 
@@ -104,7 +104,7 @@ const EditPersonalDetailScreen = ({ navigation }) => {
                     <View style={{ marginTop: Sizes.fixPadding - 5.0, ...styles.dropdownWrapStyle }}>
                         <SelectDropdown
                             data={livesInList}
-                            defaultButtonText='Delhi, India'
+                            defaultButtonText='Slough, UK'
                             buttonTextStyle={{ ...Fonts.blackColor13SemiBold, textAlign: 'left' }}
                             buttonStyle={styles.middleScreenDropDownFieldStyle}
                             renderDropdownIcon={() => (<MaterialIcons name="keyboard-arrow-down" size={24} color="black" />)}
@@ -166,7 +166,7 @@ const EditPersonalDetailScreen = ({ navigation }) => {
                     <View style={{ marginTop: Sizes.fixPadding - 5.0, ...styles.dropdownWrapStyle }}>
                         <SelectDropdown
                             data={languageList}
-                            defaultButtonText='English, Hindi, Gujarati'
+                            defaultButtonText='English, Urdu, Pashtoo, Sindhi, Saraiki, Balochi'
                             buttonTextStyle={{ ...Fonts.blackColor13SemiBold, textAlign: 'left' }}
                             buttonStyle={styles.fullScreenDropDownFieldStyle}
                             renderDropdownIcon={() => (<MaterialIcons name="keyboard-arrow-down" size={24} color="black" />)}
@@ -220,8 +220,8 @@ const EditPersonalDetailScreen = ({ navigation }) => {
                     </Text>
                     <View style={{ marginTop: Sizes.fixPadding - 5.0, marginLeft: Sizes.fixPadding, ...styles.dropdownWrapStyle }}>
                         <SelectDropdown
-                            data={religionList}
-                            defaultButtonText='Hindu'
+                            data={religionSectList}
+                            defaultButtonText='Muslim'
                             buttonTextStyle={{ ...Fonts.blackColor13SemiBold, textAlign: 'left' }}
                             buttonStyle={styles.halfScreenDropDownFieldStyle}
                             renderDropdownIcon={() => (<MaterialIcons name="keyboard-arrow-down" size={24} color="black" />)}
