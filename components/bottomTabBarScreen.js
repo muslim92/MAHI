@@ -1,7 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { View, Image, Text, BackHandler, StyleSheet } from "react-native";
 import { Colors, Fonts, Sizes } from "../constants/styles";
-import HomeScreen from "../screens/home/homeScreen";
 import MatchesScreen from "../screens/matches/matchesScreen";
 import SearchScreen from "../screens/search/searchScreen";
 import ProfileScreen from "../screens/profile/profileScreen";
@@ -44,13 +43,6 @@ const TabNavigator = () => {
                     tabBarShowLabel: false,
                 }}
             >
-                <Tab.Screen
-                    name={'Home'}
-                    component={HomeScreen}
-                    options={{
-                        tabBarIcon: ({ color }) => tabSort({ icon: require('../assets/images/icons/grayhome.png'), color: color, label: 'Home' })
-                    }}
-                />
                 <Tab.Screen
                     name={'Matches'}
                     component={MatchesScreen}

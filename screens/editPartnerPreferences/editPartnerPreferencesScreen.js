@@ -6,9 +6,9 @@ import SelectDropdown from 'react-native-select-dropdown';
 
 const { width } = Dimensions.get('screen');
 
-const ageFromList = ['18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40',];
+const ageFromList = ['18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60'];
 
-const ageToList = ['18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40',];
+const ageToList = ['18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60'];
 
 const heightFromList = [
     '3 ft 2 in',
@@ -26,11 +26,11 @@ const heightToList = [
     '7 ft 0 in',
 ];
 
-const religionList = ['Hindu', 'Christianity', 'Islam'];
+const religionSectList = ['Sunni', 'Shia', 'Ahle e Hadees', 'Deo Bandi', 'Ismaili', 'Ahmadi'];
 
 const educationList = ['BCA - MCA', 'BCA', 'BBA', 'Bcom', 'CA'];
 
-const locationList = ['Delhi, India', 'Surat, India Canada', 'Baroda, India'];
+const locationList = ['Jhelum, Pak', 'Lahore, Pak', 'Faisalabad, Pakistan', 'Islamabad, Pakistan'];
 
 const EditPartnerPreferencesScreen = ({ navigation }) => {
 
@@ -42,7 +42,7 @@ const EditPartnerPreferencesScreen = ({ navigation }) => {
                 {editAgeInfo()}
                 {editHeightInfo()}
                 {editEducationInfo()}
-                {editReligionInfo()}
+                {editReligionSectInfo()}
                 {editLocationInfo()}
                 {cancelAndDoneButton()}
             </View>
@@ -84,7 +84,7 @@ const EditPartnerPreferencesScreen = ({ navigation }) => {
                     <View style={{ marginTop: Sizes.fixPadding - 5.0, borderColor: Colors.grayColor, ...styles.dropdownWrapStyle }}>
                         <SelectDropdown
                             data={locationList}
-                            defaultButtonText='Delhi, India'
+                            defaultButtonText='Jhelum, Pakistan'
                             buttonTextStyle={{ ...Fonts.blackColor13SemiBold, textAlign: 'left' }}
                             buttonStyle={styles.fullScreenDropDownFieldStyle}
                             renderDropdownIcon={() => (<MaterialIcons name="keyboard-arrow-down" size={24} color="black" />)}
@@ -105,17 +105,17 @@ const EditPartnerPreferencesScreen = ({ navigation }) => {
         )
     }
 
-    function editReligionInfo() {
+    function editReligionSectInfo() {
         return (
             <View style={styles.detailWrapStyle}>
                 <View>
                     <Text style={{ ...Fonts.blackColor15Bold }}>
-                        Religion
+                        Religion Sect
                     </Text>
                     <View style={{ marginTop: Sizes.fixPadding - 5.0, borderColor: Colors.grayColor, ...styles.dropdownWrapStyle }}>
                         <SelectDropdown
-                            data={religionList}
-                            defaultButtonText='Hindu'
+                            data={religionSectList}
+                            defaultButtonText='Sunni'
                             buttonTextStyle={{ ...Fonts.blackColor13SemiBold, textAlign: 'left' }}
                             buttonStyle={styles.fullScreenDropDownFieldStyle}
                             renderDropdownIcon={() => (<MaterialIcons name="keyboard-arrow-down" size={24} color="black" />)}

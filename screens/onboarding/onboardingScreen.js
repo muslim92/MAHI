@@ -117,7 +117,7 @@ const OnboardingScreen = ({ navigation }) => {
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                 <View style={{ alignItems: 'center', marginBottom: Sizes.fixPadding * 7.0, }}>
                     <Image
-                        source={require('../../assets/images/logo.png')}
+                        source={require('../../assets/images/logo4.png')}
                         style={{ width: 120.0, height: 100.0 }}
                         resizeMode="contain"
                     />
@@ -125,7 +125,7 @@ const OnboardingScreen = ({ navigation }) => {
                         Find The Best Match
                     </Text>
                     <Text style={{ marginTop: Sizes.fixPadding - 5.0, textAlign: 'center', ...Fonts.whiteColor14Regular }}>
-                        {`Search your best match\nusing customized or predefined\nfilters`}
+                        {`Be Yourself, Be Patient!\nDon't Burden Your Relationship With Expectation.`}
                     </Text>
                 </View>
             </View>
@@ -137,15 +137,15 @@ const OnboardingScreen = ({ navigation }) => {
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                 <View style={{ alignItems: 'center', marginBottom: Sizes.fixPadding * 7.0, }}>
                     <Image
-                        source={require('../../assets/images/logo.png')}
+                        source={require('../../assets/images/logo4.png')}
                         style={{ width: 120.0, height: 100.0 }}
                         resizeMode="contain"
                     />
                     <Text style={{ ...Fonts.whiteColor18SemiBold }}>
-                        Many Culture Many Religion
+                    لَمْ نَرَ لِلْمُتَحَابَّيْنِ مِثْلَ النِّكَاحِ
                     </Text>
                     <Text style={{ marginTop: Sizes.fixPadding - 5.0, textAlign: 'center', ...Fonts.whiteColor14Regular }}>
-                        {`Find the perfect partner from\nyour religion`}
+                        {`"There is nothing like marriage, for the two who love one another.”\n(Sunan Ibn Majah)`}
                     </Text>
                 </View>
             </View>

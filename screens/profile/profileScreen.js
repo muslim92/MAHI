@@ -94,72 +94,6 @@ const ProfileScreen = ({ navigation }) => {
             <View style={{ marginTop: Sizes.fixPadding * 2.0, }}>
                 <TouchableOpacity
                     activeOpacity={0.6}
-                    onPress={() => navigation.navigate('Matches')}
-                >
-                    {settingsOptions(
-                        {
-                            title: 'Matches',
-                            image: require('../../assets/images/icons/matches.png')
-                        }
-                    )}
-                </TouchableOpacity>
-                <TouchableOpacity
-                    activeOpacity={0.6}
-                    onPress={() => navigation.navigate('Shortlisted')}
-                >
-                    {settingsOptions(
-                        {
-                            title: 'Shortlisted',
-                            image: require('../../assets/images/icons/star.png')
-                        }
-                    )}
-                </TouchableOpacity>
-                <TouchableOpacity
-                    activeOpacity={0.6}
-                    onPress={() => navigation.navigate('ProfileViews')}
-                >
-                    {settingsOptions(
-                        {
-                            title: 'Profile Views',
-                            image: require('../../assets/images/icons/view.png')
-                        }
-                    )}
-                </TouchableOpacity>
-                <TouchableOpacity
-                    activeOpacity={0.6}
-                    onPress={() => navigation.navigate('Chats')}
-                >
-                    {settingsOptions(
-                        {
-                            title: 'Chats',
-                            image: require('../../assets/images/icons/chat.png')
-                        }
-                    )}
-                </TouchableOpacity>
-                <TouchableOpacity
-                    activeOpacity={0.6}
-                    onPress={() => navigation.navigate('Notifications')}
-                >
-                    {settingsOptions(
-                        {
-                            title: 'Notifications',
-                            image: require('../../assets/images/icons/notification.png')
-                        }
-                    )}
-                </TouchableOpacity>
-                <TouchableOpacity
-                    activeOpacity={0.6}
-                    onPress={() => navigation.navigate('SubscriptionPlans')}
-                >
-                    {settingsOptions(
-                        {
-                            title: 'Subscription Plans',
-                            image: require('../../assets/images/icons/subscribe.png')
-                        }
-                    )}
-                </TouchableOpacity>
-                <TouchableOpacity
-                    activeOpacity={0.6}
                     onPress={() => navigation.navigate('Settings')}
                 >
                     {settingsOptions(
@@ -220,17 +154,6 @@ const ProfileScreen = ({ navigation }) => {
                         <Text style={{ ...Fonts.grayColor14SemiBold }}>
                             LV-651232
                         </Text>
-                        <Text style={{ ...Fonts.grayColor13Regular }}>
-                            You're a subscribed user
-                        </Text>
-                        <TouchableOpacity
-                            activeOpacity={0.6}
-                            onPress={() => navigation.push('UpgradePlan')}
-                            style={styles.upgradePlanButtonStyle}>
-                            <Text style={{ ...Fonts.whiteColor14Regular }}>
-                                Upgrade plan
-                            </Text>
-                        </TouchableOpacity>
                     </View>
                 </View>
                 <MaterialIcons
@@ -254,17 +177,6 @@ const ProfileScreen = ({ navigation }) => {
 }
 
 const styles = StyleSheet.create({
-    upgradePlanButtonStyle: {
-        backgroundColor: Colors.primaryColor,
-        borderRadius: Sizes.fixPadding - 5.0,
-        paddingTop: Sizes.fixPadding - 5.0,
-        paddingBottom: Sizes.fixPadding - 3.0,
-        paddingHorizontal: Sizes.fixPadding * 2.0,
-        alignSelf: 'flex-start',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: Sizes.fixPadding - 2.0,
-    },
     profileInfoWrapStyle: {
         marginVertical: Sizes.fixPadding + 5.0,
         marginRight: Sizes.fixPadding,
