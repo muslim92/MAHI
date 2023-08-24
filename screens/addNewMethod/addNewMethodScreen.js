@@ -65,7 +65,7 @@ const AddNewMethodScreen = ({ navigation }) => {
         accountNumber,
         ifscCode,
         showSelectCarTypeSheet,
-    } = state;
+    } =  state;
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: Colors.bodyBackColor }}>
